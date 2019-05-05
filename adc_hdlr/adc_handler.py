@@ -50,6 +50,10 @@ class adc_hdlr():
 
             self._adc_par[k]['sensor_num'] = sensor_num
 
+    def update_ADC(self, ADC_info, devcfg_root):
+        #TODO: update ADC sensors in pmcp
+        pass
+
 
 if __name__ == "__main__":
     hdlr = adc_hdlr('.')

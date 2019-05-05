@@ -51,8 +51,10 @@ class sheetReader():
                 dict_['M'] = sheet[M_col + str(i)].value
                 dict_['R1'] = sheet[R1_col + str(i)].value
                 dict_['R2'] = sheet[R2_col + str(i)].value
-
-                #print(self.adc_par[sensor_name])
+        
+    def get_ADC_info(self):
+        #TODO: compose ADC page infor and SRD page info for ADC sensors
+        return None
         
     def _read_SDR_list(self, wb):
         sheet_name = 'SDRList'
@@ -70,11 +72,6 @@ class sheetReader():
             if sensor_name:
                 dict_ = self.sdr_list[sensor_name] = {}
                 dict_['sensor_num'] = sheet[sensor_num_col + str(i)].value
-
-
-
-
-
 
 if __name__ == "__main__":
     reader = sheetReader()
