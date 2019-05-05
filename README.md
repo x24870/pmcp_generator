@@ -3,10 +3,10 @@
 Read BMC design sheet for updating pmcp
 
 ## Usage
-If you use pipenv as a virtual environment, remember to activate it:
+If you use pipenv as a virtual environment, remember to activate it:  
 pipenv shell
 
-Run the script:
+Run the script:  
 python pmcp_generator.py
 
 ### Prerequisites
@@ -15,7 +15,7 @@ openpyxl
 
 ### Installing
 
-There is a Piplock file, you can just install it using following command:
+There is a Piplock file, you can just install it using following command:  
 pipenv install
 
 ## Authors
